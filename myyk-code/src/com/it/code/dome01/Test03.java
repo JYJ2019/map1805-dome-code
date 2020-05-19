@@ -15,12 +15,20 @@ public class Test03 {
         }
 
         int num = array[0];
+        int temp = num;
         for (int i = 0; i < array.length; i++) {
             if (num < array[i] ) {
                 num = array[i];
             }
         }
-        System.out.println(num);
+        System.out.println("最大值为" + num);
+
+        for (int i = 0; i < array.length; i++) {
+            if (temp > array[i] ) {
+                temp = array[i];
+            }
+        }
+        System.out.println("最小值为" + temp);
 
     }
 }
