@@ -9,6 +9,7 @@ import java.util.Scanner;
 public class Test02 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.println("请输入一个不大于 26 的正整数");
         int num = sc.nextInt();
         int con = -1;
         if (num >= 0 && num <= 26) {
