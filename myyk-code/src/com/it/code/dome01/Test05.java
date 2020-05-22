@@ -9,21 +9,18 @@ import java.util.Scanner;
  */
 public class Test05 {
     public static void main(String[] args) {
-        String[][] array = new String[3][4];
         Scanner sc = new Scanner(System.in);
-        array[0][0] = "会员号";
-        array[1][0] = "年龄";
-        array[2][0] = "积分";
-
-        for (int i = 1; i < 4; i++) {
-            for (int j = 0; j < 3; j++) {
-                array[j][i] = sc.next();
+        int[][] array = new int[3][3];
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                System.out.println("输入第" + (i + 1) + "个会员号,年龄,积分.");
+                array[i][j] = sc.nextInt();
             }
         }
-
-        for (int i = 0; i < 4; i++) {
-            for (int j = 0; j < 3; j++) {
-                System.out.print(array[j][i] + "\t");
+        System.out.println("会员号\t年龄\t积分");
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                System.out.print(array[i][j] + "\t\t");
             }
             System.out.println();
         }
